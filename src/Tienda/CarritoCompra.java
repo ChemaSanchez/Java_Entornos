@@ -21,26 +21,15 @@ public class CarritoCompra{
     }
     
     //si añado un gato se come a los peces del carrito
-    public void añadirAnimal(Animal a){
+    public void añadirAnimal(Componentes a){
         carrito.add(a);
-        if(a instanceof Gato){
-            Gato conversion = (Gato)a; //Convertir a variable (Casting)
-            for(int i = 0; i< carrito.size(); i++){
-                Animal get = carrito.get(i);
-                if (get instanceof Pez){
-                    Pez p = (Pez)get; //Convertir a variable (Casting)
-                    carrito.remove(p);
-                    conversion.comer(p);
-                }
-            }
-        }
     }
     
     public int getPrecio(){
         int precioTotal = 0;
         
         for (int i = 0; i< carrito.size(); i++){
-            Animal a = carrito.get(i);
+            Componentes a = carrito.get(i);
             precioTotal += a.getPrecio();
         }
         
