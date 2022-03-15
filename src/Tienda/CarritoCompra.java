@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class CarritoCompra{
     
-    private List<Animal> carrito;
+    private List<Componentes> carrito;
 
     public CarritoCompra() {
         carrito = new ArrayList<>();
