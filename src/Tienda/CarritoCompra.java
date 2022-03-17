@@ -10,32 +10,29 @@ import java.util.List;
 
 /**
  *
- * @author Chema
+ * @author Juanmi
  */
 public class CarritoCompra{
-    
-    private List<Componentes> carrito;
-
+    private List<Componentes> carrito; 
+    private double precioTotal;
     public CarritoCompra() {
-        carrito = new ArrayList<>();
+        carrito = new ArrayList<>(); // Inicializamos el carrito 
+        precioTotal=0; // Inicializamos el pretio total a 0 
     }
-    
-    //si añado un gato se come a los peces del carrito
-    public void añadirAnimal(Componentes a){
+
+    public void añadirComponente(Componentes a){ //Le pasamos un componente como parámetro y lo añadimos al carrito
         carrito.add(a);
     }
     
-    public int getPrecio(){
-        int precioTotal = 0;
-        
+    public double getPrecio(){
         for (int i = 0; i< carrito.size(); i++){
             Componentes a = carrito.get(i);
             precioTotal += a.getPrecio();
         }
-        
         return precioTotal;
     }
-    
+
+
     public void mostrarCarrito(){
         for(int i = 0; i < carrito.size(); i++){
             System.out.println(carrito.get(i).getNombre());
