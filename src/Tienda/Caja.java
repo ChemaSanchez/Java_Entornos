@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+package Tienda;
+
 
 /**
  *
@@ -21,8 +21,8 @@ public class Caja{
         monedas=0;
     }
     public String pago(int d){
-        resto=0;
-        dinero=d;
+        int resto=0;
+        int dinero=d;
         if(d%50 >0){
             billetes50=dinero/50;
             resto=dinero%50;
@@ -42,7 +42,7 @@ public class Caja{
         if(resto%2>0){
             monedas=resto;
         }
-        return "La caja tiene "+billetes50+" billetes de 50, "+billetes20+" de 20, "+billetes10+" de 10, "+billetes5+" de 5 y "+monedas+" euros" 
+        return "La caja tiene "+billetes50+" billetes de 50, "+billetes20+" de 20, "+billetes10+" de 10, "+billetes5+" de 5 y "+monedas+" euros" ;
     }
 }
 //cddddddddd
