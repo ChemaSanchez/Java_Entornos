@@ -5,7 +5,7 @@ package Tienda;
  *
  * @author Mario
  */
-public class Caja{
+public class Caja  extends CarritoCompra{
     
     private int billetes50;
     private int billetes20;
