@@ -32,7 +32,6 @@ public class CarritoCompra{
         return precioTotal;
     }
 
-
     public void mostrarCarrito(){
         for(int i = 0; i < carrito.size(); i++){
             System.out.println(carrito.get(i).getNombre());
