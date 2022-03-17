@@ -45,3 +45,4 @@ public class Caja{
         return "La caja tiene "+billetes50+" billetes de 50, "+billetes20+" de 20, "+billetes10+" de 10, "+billetes5+" de 5 y "+monedas+" euros" 
     }
 }
+//cddddddddd
