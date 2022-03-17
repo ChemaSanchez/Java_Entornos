@@ -6,9 +6,10 @@ public class TarjetaGrafica extends Componentes{
     }
 
     public boolean esRTX(){
+        boolean esRTX = false;
         if (getNombre().startsWith("RTX")){
-            return true;
+            esRTX = true;
         }
-        else return false;
+        return esRTX;
     }
 }
