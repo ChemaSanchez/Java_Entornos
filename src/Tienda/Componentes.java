@@ -2,7 +2,7 @@ package Tienda;
 
 /**
  *
- * @author Chema
+ * @author tonylopez
  */
 public abstract class Componentes {
     private double precio;
