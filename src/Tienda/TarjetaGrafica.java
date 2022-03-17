@@ -13,4 +13,3 @@ public class TarjetaGrafica extends Componentes{
         return esRTX;
     }
 }
-//soy tony
