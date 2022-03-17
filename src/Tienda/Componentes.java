@@ -4,22 +4,20 @@ package Tienda;
  *
  * @author Chema
  */
-public class Componentes {
-    private int precio;
+public abstract class Componentes {
+    private double precio;
     private String nombre;
 
-    public Componentes(String n, int p) {
+    public  Componentes(String n, double p) {
         precio = p;
         nombre = n;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
-
     public String getNombre() {
         return nombre;
     }
-    
 }
 
