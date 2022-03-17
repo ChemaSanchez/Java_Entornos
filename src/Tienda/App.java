@@ -76,7 +76,9 @@ public class App {
                 break;
                 case 3:
                         System.out.print("Tienes en el carrito los siguientes articulos: ");
+                        System.out.println("");
                         carrito.mostrarCarrito();
+                        System.out.println("");
                         System.out.println("El precio de estos componentes asciende a "+carrito.getPrecio()+" euros");
                 break;
             }
